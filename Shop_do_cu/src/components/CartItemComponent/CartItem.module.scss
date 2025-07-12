@@ -11,6 +11,7 @@ $text-dark: #333;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(#000, 0.1);
+  min-height: calc(100vh - 74px - 50px - 300px);
 }
 
 // Thanh “Chọn tất cả”
