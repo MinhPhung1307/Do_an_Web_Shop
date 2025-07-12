@@ -1,0 +1,70 @@
+.sidebar {
+  width: 220px;
+  background: linear-gradient(to bottom, #3b7ba3, #1db4bc);
+  color: white;
+  padding: 20px;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu a.active {
+  background: white;
+  color: #1db4bc;
+  font-weight: bold;
+}
+
+.sidebar-mobile {
+  position: fixed;
+  top: 120px; // hoặc chiều cao header
+  left: 0;
+  width: 250px;
+  height: calc(100% - 60px);
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .sidebar {
+    width: 100%;
+  }
+  .menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    a {
+      text-align: center;
+    }
+  }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  
+}
